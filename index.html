@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ListOfTools</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ---------------------Weather---------------- -->
+    <div id="areth2">
+      <img src="right.png" onclick="fun3();" alt="" width="50" height="50" />
+      <br /><br />
+    </div>
+    <iframe
+      id="weather"
+      class="0"
+      src="https://www.meteoblue.com/el/καιρός/widget/daily/Περιστέρι_Ελλάδα_255524?geoloc=fixed&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&pressure=0&layout=light"
+      frameborder="0"
+      scrolling="NO"
+      allowtransparency="true"
+      sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+      style="width: 270px; height: 320px"
+    ></iframe>
+    <div id="areth"><br /><br /><br /></div>
+    <!-- ---------------------Calendar---------------- -->
+    <div id="calendar1" style="display: none">
+      <iframe
+        src="https://calendar.google.com/calendar/embed?src=dionrou%40gmail.com&ctz=Europe%2FAthens"
+        style="border: 0"
+        width="400"
+        height="400"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+
+    <!-- ---------------------Eortes---------------- -->
+
+    <div id="sakhs1" style="display: none; width: 370px; text-align: center">
+      <iframe
+        src="https://www.eortologio.net/widget.php?color=ffffff&color2=80cc20&bgcolor=06541b&width=400&height=400"
+        width="370"
+        height="340"
+        scrolling="yes"
+        marginwidth="0"
+        marginheight="0"
+        frameborder="0"
+        border="0"
+        style="border: 0; margin: 0; padding: 0"
+      ></iframe
+      ><a
+        style="
+          font-size: 13px;
+          color: #404040;
+          text-decoration: none;
+          text-shadow: 0px 1px 0px #f0f0f0;
+        "
+        href="https://www.eortologio.net"
+        target="_blank"
+        >Εορτολόγιο</a
+      >
+       
+    </div>
+
+    <div id="div1"></div>
+
+    <!-- ------------ Date------------ -->
+    <div class="date1 areth1" id="date1">
+      <iframe
+        src="https://free.timeanddate.com/clock/i88nm06q/n26/szw110/szh110/hoc3ff/hbw30/cf100/hnc09f/fas26/fdi82"
+        frameborder="0"
+        width="120"
+        height="110"
+      ></iframe>
+      <button type="button" id="btncalendar" onclick="myfuncalendar()">
+        <img src="calendar.png" />
+      </button>
+    </div>
+    <div id="areth1">
+      <iframe
+        src="https://free.timeanddate.com/clock/i88m1bgm/n26/tlgr17/fs18/tcf90/pc9f0/ftbi/tt0/th2"
+        frameborder="0"
+        width="330"
+        height="20"
+      ></iframe>
+    </div>
+
+    <nav>
+      <ul class="nav" id="nav"></ul>
+    </nav>
+
+    <div id="sakhs"><a onclick="eortes1()">Eortes</a></div>
+
+    <script type="text/javascript" src="data.js"></script>
+    <script src="java.js"></script>
+    <script>
+      window.onload = fun2();
+      //    fun1(News);
+    </script>
+  </body>
+</html>

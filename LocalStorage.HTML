@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="styleLS.css" />
+
+  </head>
+  <body>
+
+    <div class="wrapper1" class="lis" id="todo2">
+      <div class="add-box" class="lis" >
+        <button
+        class="delete-button" 
+        style="background-color: red; float: right; margin-top: 2px"
+        onclick="history.back();"
+      >
+       Close Window 
+      </button> 
+      <h1 >Array  Name:</h1>
+      <br>
+
+        <div id="alert-box" style="display: none; width: 300px; height: 30px; color: white; background-color: red; border-color: black; overflow-y: hidden;">Must be filled and Unique!!!!!</div>
+        <input type="text" id="text7" class="text7" placeholder="Must be filled and Unique..."> </input>
+        <button onclick="myfun11();">Add New Array</button>
+        <br><br>
+        <!-- <button onclick="myfun12();">Read Arrays from File</button> -->
+<br><br><br>
+    
+        <ul class="todo1" id="todo1"></ul>
+
+      </div>
+    </div>
+
+
+
+<div class="container" id="container" style="display: none">
+  <div class="to-do-app">
+    <button
+      class="delete-button" id="tododel"
+      style="background-color: red; float: right; margin-top: 2px"
+      onclick="todonotesclose();"
+    >
+      X
+    </button>
+    <h1 id="todoh1">Array for:</h1>
+    <br />
+    <input type="text" id="item1" placeholder="Enter item..." />
+    <input type="text" id="item2" placeholder="Enter URL..." />
+    <br />
+    <br />
+    <button class="cnt" onclick="add()">Add New Item</button>
+    <button class="cnt" onclick="del()">Del Array</button>
+    <span id="span1">To edit Double Click on it</span>
+
+    <div>
+      <button class="mve" onclick="Move(1)" >Move Up</button>
+    <button class="mve" onclick="Move(2)" >Move Down</button>
+    <button class="mve" onclick="Move(3)" >Return</button> 
+    </div>
+  </div>
+  <ul class="list1" id="list1"></ul>
+</div>
+
+<div class="container" id="container1" style="display: none">
+  <div class="to-do-app">
+    <h1 id="todoh2">Edit the Array Item:</h1>
+    <br />
+    <input type="text" id="item3" placeholder="Edit item..." />
+    <input type="text" id="item4" placeholder="Edit URL..." />
+    <br />
+    <br />
+    <br>
+    <button onclick="ok1()">Save</button>
+    <button onclick="cancel1()">Cancel</button>
+    <br><br>
+  </div>
+</div>
+
+
+    <script src="scriptLS.js"></script>    </script>
+    <!-- <script src="scriptLS1.js"></script>    </script> -->
+
+</html>

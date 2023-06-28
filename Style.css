@@ -1,0 +1,144 @@
+body {
+  align-content: center;
+  position: relative;
+  background-image: url("seaview2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#areth {
+  position: absolute;
+  padding-left: 0px;
+  width: 280px;
+  height: 60px;
+  top: 290px;
+  background-color: yellow;
+  z-index: 0;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+}
+
+#areth2 {
+  position: absolute;
+  padding-left: 0px;
+  text-align: right;
+  font-size: xx-large;
+  font-weight: 800;
+  width: 330px;
+  height: 50px;
+  top: 48px;
+  background-color: yellow;
+  z-index: 15;
+}
+
+#sakhs1 {
+  position: absolute;
+  left: 0%;
+  top: 20px;
+  z-index: 35;
+}
+#sakhs {
+  position: absolute;
+  left: 100px;
+  top: 400px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font: 2em sans-serif;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #3408f5;
+  cursor: pointer;
+}
+
+#sakhs:hover {
+  background-color: #af041b;
+}
+
+#div1 {
+  position: absolute;
+  padding-left: 0px;
+  text-align: left;
+  width: 420px;
+  top: 20px;
+}
+#date1 {
+  position: absolute;
+  padding-left: 0px;
+  text-align: left;
+  width: 420px;
+  top: 460px;
+  left: 50px;
+}
+#areth1 {
+  position: absolute;
+  padding-left: 0px;
+  text-align: left;
+  width: 420px;
+  top: 600px;
+  left: 30px;
+}
+ul.nav {
+  position: absolute;
+  padding-left: 0px;
+  background-color: #4c33ba;
+  text-align: left;
+  width: 380px;
+  top: 640px;
+}
+ul.nav > li {
+  display: inline-block;
+  padding: 5px 9px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  ul.nav > li:hover {
+    background-color: #c21e34;
+  }
+}
+ul.nav > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  background-color: rgb(255, 251, 0);
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(14, 10, 224);
+  border-radius: 10px;
+  width: 85px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+input[type="button"]:hover {
+  background-color: #ffffff;
+  color: red;
+}
+
+/* ------------calendar----------- */
+#calendar1 {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 0%;
+  z-index: 30;
+}
+#btncalendar {
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+#weather {
+  /*   background-color: #08f543; */
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 0px;
+  z-index: 20;
+}
